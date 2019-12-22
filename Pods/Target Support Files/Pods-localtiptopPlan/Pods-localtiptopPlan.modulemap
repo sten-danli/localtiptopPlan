@@ -1,0 +1,6 @@
+framework module Pods_localtiptopPlan {
+  umbrella header "Pods-localtiptopPlan-umbrella.h"
+
+  export *
+  module * { export * }
+}
