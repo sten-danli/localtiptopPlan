@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BKl-jl-kuj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BKl-jl-kuj">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -93,22 +93,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eP-9G-yiP">
-                                <rect key="frame" x="20" y="277" width="335" height="34"/>
+                                <rect key="frame" x="20" y="277" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZCz-sN-GP7">
-                                <rect key="frame" x="20" y="350" width="335" height="34"/>
+                                <rect key="frame" x="20" y="350" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passwort" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i8V-BQ-ezD">
-                                <rect key="frame" x="20" y="422" width="335" height="34"/>
+                                <rect key="frame" x="20" y="422" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W86-4u-eFp">
-                                <rect key="frame" x="20" y="491" width="335" height="34"/>
+                                <rect key="frame" x="20" y="491" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Account erstellen">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -118,14 +118,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iH-qq-l6c">
-                                <rect key="frame" x="20" y="820" width="335" height="30"/>
+                                <rect key="frame" x="20" y="820" width="374" height="30"/>
                                 <state key="normal" title="Du hast schon einen Account? Login"/>
                                 <connections>
                                     <action selector="dismissButtonTapped:" destination="umb-Py-9pC" eventType="touchUpInside" id="MEl-36-DoT"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="profil_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="tAf-dZ-q6d">
-                                <rect key="frame" x="137" y="82" width="100" height="100"/>
+                                <rect key="frame" x="137" y="82" width="139" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Mm2-2n-Dvi"/>
@@ -935,7 +935,7 @@
                                 <rect key="frame" x="0.0" y="763" width="414" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="You must Zingal!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0G6-fP-dQy">
-                                        <rect key="frame" x="59" y="0.0" width="281" height="50"/>
+                                        <rect key="frame" x="59" y="0.0" width="208" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -946,13 +946,27 @@
                                             <constraint firstAttribute="height" constant="43" id="len-TD-toP"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEa-op-dMo">
+                                        <rect key="frame" x="350" y="3" width="56" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="T5t-Di-Oqw"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="eNe-vo-jBQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Con">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="conSendButtonTapped:" destination="6Zo-6X-rGs" eventType="touchUpInside" id="dVt-lV-UPO"/>
+                                            <action selector="sendButtonTapped:" destination="6Zo-6X-rGs" eventType="touchUpInside" id="50m-ma-ynP"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3i-Fl-WRx">
-                                        <rect key="frame" x="358" y="0.0" width="56" height="46"/>
+                                        <rect key="frame" x="286" y="2" width="56" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="nkQ-Br-uZH"/>
                                             <constraint firstAttribute="height" constant="46" id="zV2-a1-Zvu"/>
                                         </constraints>
-                                        <state key="normal" title="Send">
+                                        <state key="normal" title="Pro">
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -966,14 +980,18 @@
                                     <constraint firstItem="1N1-4n-mbH" firstAttribute="top" secondItem="wbR-GC-Jpu" secondAttribute="top" constant="4" id="Alk-pk-LiV"/>
                                     <constraint firstItem="1N1-4n-mbH" firstAttribute="leading" secondItem="wbR-GC-Jpu" secondAttribute="leading" constant="8" id="CQo-RN-4fu"/>
                                     <constraint firstAttribute="height" constant="50" id="DJl-ng-Nnp"/>
-                                    <constraint firstAttribute="trailing" secondItem="N3i-Fl-WRx" secondAttribute="trailing" id="F0F-u5-Ou1"/>
+                                    <constraint firstAttribute="trailing" secondItem="N3i-Fl-WRx" secondAttribute="trailing" constant="72" id="F0F-u5-Ou1"/>
+                                    <constraint firstItem="SEa-op-dMo" firstAttribute="leading" secondItem="N3i-Fl-WRx" secondAttribute="trailing" constant="8" id="ORG-4J-h6j"/>
                                     <constraint firstItem="0G6-fP-dQy" firstAttribute="top" secondItem="wbR-GC-Jpu" secondAttribute="top" id="QGD-zh-Gq2"/>
                                     <constraint firstItem="0G6-fP-dQy" firstAttribute="leading" secondItem="1N1-4n-mbH" secondAttribute="trailing" constant="8" id="TYc-UG-82O"/>
-                                    <constraint firstItem="N3i-Fl-WRx" firstAttribute="leading" secondItem="0G6-fP-dQy" secondAttribute="trailing" constant="18" id="bwR-2o-JGQ"/>
-                                    <constraint firstItem="N3i-Fl-WRx" firstAttribute="top" secondItem="wbR-GC-Jpu" secondAttribute="top" id="lXJ-9W-Evm"/>
+                                    <constraint firstItem="N3i-Fl-WRx" firstAttribute="leading" secondItem="0G6-fP-dQy" secondAttribute="trailing" constant="19" id="bwR-2o-JGQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="SEa-op-dMo" secondAttribute="trailing" constant="8" id="hbI-QQ-2yW"/>
+                                    <constraint firstItem="SEa-op-dMo" firstAttribute="top" secondItem="0G6-fP-dQy" secondAttribute="top" constant="3" id="jvk-P9-I5R"/>
+                                    <constraint firstItem="N3i-Fl-WRx" firstAttribute="top" secondItem="wbR-GC-Jpu" secondAttribute="top" constant="2" id="lXJ-9W-Evm"/>
                                     <constraint firstAttribute="bottom" secondItem="0G6-fP-dQy" secondAttribute="bottom" id="ovc-gg-JGa"/>
-                                    <constraint firstAttribute="bottom" secondItem="N3i-Fl-WRx" secondAttribute="bottom" constant="4" id="uqk-Lr-lmg"/>
+                                    <constraint firstAttribute="bottom" secondItem="N3i-Fl-WRx" secondAttribute="bottom" constant="2" id="uqk-Lr-lmg"/>
                                     <constraint firstAttribute="bottom" secondItem="1N1-4n-mbH" secondAttribute="bottom" constant="3" id="v8O-qh-MuX"/>
+                                    <constraint firstAttribute="bottom" secondItem="SEa-op-dMo" secondAttribute="bottom" constant="1" id="wJM-Cg-TuD"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1004,7 +1022,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wc-yf-aAE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5007" y="2865"/>
+            <point key="canvasLocation" x="-5008.695652173913" y="2864.7321428571427"/>
         </scene>
         <!--Contra Comment View Controller-->
         <scene sceneID="WOQ-PY-Pbg">
@@ -1339,6 +1357,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Fo7-iK-9A0"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWX-QT-eVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -79,7 +79,7 @@ class CommentViewController: UIViewController {
         let isText = commenTextField.text?.count ?? 0 > 0
         //如果有文字
         if isText {
-            sendButton.setImage(UIImage.init(named: "bazingal"), for: .normal)
+            sendButton.setTitleColor(.black, for: UIControl.State.normal)
             sendButton.isEnabled = true
         } else {
             sendButton.setTitleColor(.lightGray, for: UIControl.State.normal)
@@ -107,14 +107,50 @@ class CommentViewController: UIViewController {
            super.viewWillDisappear(animated)
            tabBarController?.tabBar.isHidden = false
        }
+    
+    @IBAction func conSendButtonTapped(_ sender: UIButton) {
+        creatContraComment()
+    }
+    
+    // MARK：-Creat Contra Comment
+    func creatContraComment(){
+        let conproTag = "contra"
+        let refDatabase = Database.database().reference()
+        let refComments = refDatabase.child("comments")
+        guard let commentId = refComments.childByAutoId().key else {return}
+        
+        let newCommentRef = refComments.child(commentId)
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        
+        
+        let dic = ["uid": uid, "commentText": commenTextField.text!,"conproTag": conproTag] as [String : Any]
+        newCommentRef.setValue(dic) { (error, ref) in
+            if error != nil{
+                ProgressHUD.showError(error?.localizedDescription)
+            }
+            
+            guard let postId = self.post?.id else{ return }
+            let postCommenRef = Database.database().reference().child("postComments").child(postId).child(commentId)
+            postCommenRef.setValue(true, withCompletionBlock: { (error, ref) in
+                if error != nil {
+                    ProgressHUD.showError(error?.localizedDescription)
+                    return
+                }
+                self.view.endEditing(true)
+                self.empty()
+            })
+        }
+    }
+    
     //👇当按下sendButton时键盘消失执行 empty()复原键盘原始状态。
     @IBAction func sendButtonTapped(_ sender: UIButton) {
         creatComment()
     }
+    
     //👆当按下sendButton时键盘消失执行 empty()复原键盘原始状态。
 // MARK：-Creat Comment
     func creatComment(){
-        let conproTag = "pacmanpro"
+        let conproTag = "pro"
         let refDatabase = Database.database().reference()
         let refComments = refDatabase.child("comments")
         guard let commentId = refComments.childByAutoId().key else {return}
